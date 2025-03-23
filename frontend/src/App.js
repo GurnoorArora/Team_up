@@ -17,6 +17,7 @@ import EditProfile from "./screens/EditProfile";
 import SearchForTeams from "./screens/SearchForTeams";
 import Requests from "./screens/Requests";
 import EditTeam from "./screens/EditTeam";
+import payments from "./screens/Payments";
 import React from "react";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <ProtectedRoute path="/createTeam" component={CreateTeam} exact />
           <ProtectedRoute path="/editTeam/:id" component={EditTeam} exact />
           <ProtectedRoute path="/teams" component={SearchForTeams} exact />
+          <ProtectedRoute path="/payments" component={payments} exact />
           <ProtectedRoute
             path="/teams/:teamName"
             component={SearchForTeams}

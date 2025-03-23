@@ -51,3 +51,102 @@ a {
 .color.yellow {
   background-color: yellow;
 }
+
+/* Overall page styling */
+.paymentmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74EBD5, #ACB6E5);
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* Centering the payment form */
+.centerthis {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  transition: 0.3s;
+}
+
+.centerthis:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.paymentheading {
+  text-align: center;
+  font-size: 28px;
+  color: #1976d2;
+  margin-bottom: 30px;
+}
+
+/* Input field styling */
+.paymentname input,
+.paymentemail input,
+.paymentaccountnumber input,
+.lastdetails input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 8px rgba(25, 118, 210, 0.4);
+}
+
+/* Flex container for date and CVV */
+.paymentdatecvv {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Make date and CVV inputs equal width */
+.lastdetails input {
+  width: calc(50% - 10px);
+}
+
+/* Payment button */
+.makepaymet {
+  width: 100%;
+  padding: 15px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.makepaymet:hover {
+  background: #45a049;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .paymentdatecvv {
+    flex-direction: column;
+  }
+  
+  .lastdetails input {
+    width: 100%;
+  }
+}
+

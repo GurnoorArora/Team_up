@@ -112,31 +112,60 @@ const deleteEvent = expressAsyncHandler(async (req, res) => {
 // @desc    getScrappedEvents
 // @route   GET /api/events/getScrappedEvents
 // @access  Public
+// const getScrappedEvents = expressAsyncHandler(async (req, res) => {
+//   try {
+//     const [data_one, data_two] = await Promise.all([
+//       axios.get("https://www.kontests.net/api/v1/hacker_earth"),
+//       axios.get("https://www.kontests.net/api/v1/hacker_rank"),
+//     ]);
+//     const event_one = await data_one.data;
+//     const event_two = await data_two.data;
+
+//     const event_one_data = await event_one.map((item) => {
+//       item["source"] = "HackerEarth";
+//       return item;
+//     });
+//     const event_two_data = await event_two.map((item) => {
+//       item["source"] = "HackerRank";
+//       return item;
+//     });
+
+//     const events = [...event_one_data, ...event_two_data];
+
+//     return res.json(events);
+//   } catch (error) {
+//     return res.json(error);
+//   }
+// });
+
+// @desc    getScrappedEvents (Fetch hackathons from Devpost API)
+// @route   GET /api/events/getScrappedEvents
+// @access  Public
 const getScrappedEvents = expressAsyncHandler(async (req, res) => {
   try {
-    const [data_one, data_two] = await Promise.all([
-      axios.get("https://www.kontests.net/api/v1/hacker_earth"),
-      axios.get("https://www.kontests.net/api/v1/hacker_rank"),
-    ]);
-    const event_one = await data_one.data;
-    const event_two = await data_two.data;
+    const { data } = await axios.get("https://devpost.com/api/hackathons");
 
-    const event_one_data = await event_one.map((item) => {
-      item["source"] = "HackerEarth";
-      return item;
-    });
-    const event_two_data = await event_two.map((item) => {
-      item["source"] = "HackerRank";
-      return item;
-    });
+    if (!data.hackathons) {
+      return res.status(404).json({ error: "No hackathons found" });
+    }
 
-    const events = [...event_one_data, ...event_two_data];
+    const hackathons = data.hackathons.map((hack) => ({
+      title: hack.title,
+      url: hack.url,
+      start_date: hack.start_time,
+      end_date: hack.end_time,
+      location: hack.location,
+      prize: hack.prizes_total,
+      status: hack.status,
+    }));
 
-    return res.json(events);
+    return res.json(hackathons);
   } catch (error) {
-    return res.json(error);
+    console.error("Error fetching hackathons:", error);
+    return res.status(500).json({ error: "Failed to fetch hackathons" });
   }
 });
+
 
 export {
   getEvents,

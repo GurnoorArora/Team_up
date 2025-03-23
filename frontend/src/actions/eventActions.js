@@ -21,7 +21,7 @@ export const getEventsAction = () => async (dispatch) => {
     };
 
     const { data } = await axios.get("/api/events", config);
-
+    //console.log(data);
     dispatch({
       type: GET_EVENTS_SUCCESS,
       payload: data,
@@ -50,7 +50,7 @@ export const getScrappedEventsAction = () => async (dispatch) => {
     };
 
     const { data } = await axios.get("/api/events/getScrappedEvents", config);
-
+    
     dispatch({
       type: GET_SCRAPPED_EVENTS_SUCCESS,
       payload: data,

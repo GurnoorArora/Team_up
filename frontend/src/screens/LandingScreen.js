@@ -301,7 +301,7 @@ function LandingScreen({ history }) {
           p: 2,
         }}
       >
-        &copy; {new Date().getFullYear()} Team Maker. All rights reserved.
+        &copy; {new Date().getFullYear()} Team Up All rights reserved.
       </Box>
     </Box>
   );

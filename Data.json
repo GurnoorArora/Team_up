@@ -1,0 +1,119 @@
+[
+  {
+    "State": "Punjab",
+    "Year": "2014-15",
+    "Data": {
+      "Cotton Area": "4.2 Lakh Ha",
+      "Irrigated Area": "4.16 Lakh Ha",
+      "Fertilizer Usage": "170 kg NPK/ha",
+      "Impact Level": "High",
+      "Primary Pest/Disease": ["Whitefly", "CLCud"],
+      "Cotton Yield": "526.19 kg/ha",
+      "MSP": 3900
+    }
+  },
+  {
+    "State": "Punjab",
+    "Year": "2015-16",
+    "Data": {
+      "Cotton Area": "3.39 Lakh Ha",
+      "Irrigated Area": "3.36 Lakh Ha",
+      "Fertilizer Usage": "Very High",
+      "Impact Level": "Very High",
+      "Primary Pest/Disease": ["Whitefly"],
+      "Cotton Yield": "313.42 kg/ha",
+      "MSP": 3950
+    }
+  },
+  {
+    "State": "Punjab",
+    "Year": "2016-17",
+    "Data": {
+      "Cotton Area": "2.85 Lakh Ha",
+      "Irrigated Area": "2.82 Lakh Ha",
+      "Fertilizer Usage": "165 kg NPK/ha",
+      "Impact Level": "High",
+      "Primary Pest/Disease": ["Whitefly"],
+      "Cotton Yield": "536.84 kg/ha",
+      "MSP": 3980
+    }
+  },
+  {
+    "State": "Punjab",
+    "Year": "2017-18",
+    "Data": {
+      "Cotton Area": "2.91 Lakh Ha",
+      "Irrigated Area": "2.88 Lakh Ha",
+      "Fertilizer Usage": "160 kg NPK/ha",
+      "Impact Level": "Normal",
+      "Primary Pest/Disease": ["Various"],
+      "Cotton Yield": "671.82 kg/ha",
+      "MSP": 4020
+    }
+  },
+  {
+    "State": "Punjab",
+    "Year": "2018-19",
+    "Data": {
+      "Cotton Area": "2.68 Lakh Ha",
+      "Irrigated Area": "2.65 Lakh Ha",
+      "Fertilizer Usage": "170 kg NPK/ha",
+      "Impact Level": "Low",
+      "Primary Pest/Disease": ["Pink Bollworm (emerging)"],
+      "Cotton Yield": "775 kg/ha",
+      "MSP": 5150
+    }
+  },
+  {
+    "State": "Haryana",
+    "Year": "2020-21",
+    "Data": {
+      "Cotton Area": "7.4 Lakh Ha",
+      "Irrigated Area": "6.22 Lakh Ha",
+      "Fertilizer Usage": "135 kg NPK/ha",
+      "Impact Level": "High",
+      "Primary Pest/Disease": ["Pink Bollworm"],
+      "Cotton Yield": "352 kg/ha",
+      "MSP": 5726
+    }
+  },
+  {
+    "State": "Haryana",
+    "Year": "2021-22",
+    "Data": {
+      "Cotton Area": "6.36 Lakh Ha",
+      "Irrigated Area": "5.35 Lakh Ha",
+      "Fertilizer Usage": "125 kg NPK/ha",
+      "Impact Level": "Very High",
+      "Primary Pest/Disease": ["Pink Bollworm"],
+      "Cotton Yield": "352 kg/ha",
+      "MSP": 6620
+    }
+  },
+  {
+    "State": "Rajasthan",
+    "Year": "2022-23",
+    "Data": {
+      "Cotton Area": "8.15 Lakh Ha",
+      "Irrigated Area": "6.43 Lakh Ha",
+      "Fertilizer Usage": "NA",
+      "Impact Level": "High",
+      "Primary Pest/Disease": ["Pink Bollworm"],
+      "Cotton Yield": "579 kg/ha",
+      "MSP": 6080
+    }
+  },
+  {
+    "State": "Rajasthan",
+    "Year": "2023-24",
+    "Data": {
+      "Cotton Area": "7.91 Lakh Ha",
+      "Irrigated Area": "6.43 Lakh Ha",
+      "Fertilizer Usage": "NA",
+      "Impact Level": "High",
+      "Primary Pest/Disease": ["CLCud", "Various"],
+      "Cotton Yield": "604 kg/ha",
+      "MSP": 6620
+    }
+  }
+]
